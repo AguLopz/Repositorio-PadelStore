@@ -1,0 +1,285 @@
+
+body {
+    text-align: center;
+    background-image: url(https://i.postimg.cc/SRk0YZ2h/Padel-Store-portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.titulo img {
+  
+  width: 100px;
+  height: 100px;
+}
+
+#contenedor {
+  width: 1280px; 
+  margin: 0 auto 0 auto;
+  display: grid;   
+  grid-template-columns: auto ;
+  grid-template-rows: 1fr ;
+  grid-template-areas: 
+  "titulo"
+  "header" 
+  "contenido"
+  "footer";   
+  
+}
+.titulo {
+  grid-area: titulo;
+  justify-content: center;
+}
+Body h1 {
+    Color: #E63946;
+    font-family: 'Rubik', italic;
+   font-weight: 500;
+}
+body h1 span {
+    color: #1D3557;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+.fondo img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/*HEADER*/
+header {
+	background-color: white;
+	justify-content: space-between; 
+	color: white;
+  position: sticky;
+  top: 0;
+  /*grid-area: header;*/
+ 
+   
+}
+html {
+    box-sizing: border-box;
+  } 
+ 
+  
+  nav ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  h1 {
+    width: 500px;
+    margin: 100px auto 20px;
+    color: #f0f0f0;
+    text-align: center;
+  }
+  
+  nav {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    width: auto;
+    margin: 0 auto;
+    background: white;
+    color: black;
+  }
+  nav a {
+    display: block;
+    padding: 0 16px;
+    line-height: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+  }
+  .navmenu {
+    line-height: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .navmenu-item {
+    display: inline-block;
+    position: relative;
+
+  }
+  .navmenu-item:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .navmenu-item:hover .navsubmenu {
+    display: block;
+  }
+  .navsubmenu {
+    font-weight: 300;
+    text-transform: none;
+    display: none;
+    position: absolute;
+    width: 220px;
+    background-color: white;
+  }
+  .navsubmenu-item:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+
+  /*CONTENIDO*/
+  .contenido {
+    grid-area: contenido;
+  }
+  .quienessomos{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    background-color: white;
+    
+    
+    
+}
+ .quienessomos h1 {
+    margin-left: 15px;
+    color: #1D3557;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    
+    
+ }
+ .quienessomos p {
+     margin: 15px 15px 15px 15px;
+     text-align: center;
+     
+  }
+
+  .quienessomos a {
+      color: #E63946;   
+      
+  }
+
+  .quienessomos a:hover{
+      color: black;
+      background-color:#E63946 ;
+  }
+/*CATALOGO*/
+.marcas{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.marcas img {
+    margin: 5px;
+    background-color: white;
+    width: 20%;
+    height: 20%;
+    
+   
+
+}
+
+.catalogo-paletas {    
+	
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.catalogo-paletas img{
+    width: 20%;
+    height: 20%;
+    margin: 10px;
+}  
+.catalogo-bolsos img{
+    width: 200px;
+    height: 200px;
+    
+}     
+
+.catalogo-bolsos {
+    
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.catalogo-zapas {    
+	
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.catalogo-zapas img{
+    width: 20%;
+    height: 20%;
+    margin: 10px;
+}
+
+
+ 
+
+/* Style the form element with a border around it */
+form {
+    border: 4px solid #f1f1f1;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+  }
+  
+  /* Add some padding and a grey background color to containers */
+  .container {
+    padding: 20px;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the input elements and the submit button */
+  input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Add margins to the checkbox */
+  input[type=checkbox] {
+    margin-top: 16px;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+
+  }
+
+
+  /*FOOTER*/
+
+  #footer {
+    width: 1280px;
+    bottom: 0;
+    left: 0;
+    display:inline-block;    
+    background-color: white;
+    justify-content: space-between;
+    grid-area: footer;
+
+    
+}
+
+#footer p {
+    font-family: 'Rubik', italic;
+   font-weight: 500;
+   color: black;
+   margin: 10px 10px 10px 10px;
+   text-align: center;
+   
+   
+   
+}
+#footer a {
+    font-family: 'Rubik', italic;
+   font-weight: 500;
+   color: black;
+   text-decoration: none;
+}
